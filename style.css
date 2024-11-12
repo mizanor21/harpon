@@ -1,0 +1,180 @@
+/* Reset and Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, #000078, #017fcb);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Navigation */
+.header-nav {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.header-nav nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.header-nav nav ul li a {
+    color: #0051a3;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header-nav nav ul li a:hover {
+    color: #f76f8e;
+}
+
+/* Carousel Styling */
+.carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    /* Each slide takes up full width */
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Dots for Carousel */
+.carousel-dots {
+    text-align: center;
+    position: relative;
+    bottom: 40px;
+    width: 100%;
+    z-index: 100;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #717171;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #bbb;
+}
+
+.campaign-logo {
+    background-color: #ffffff;
+    color: #f76f8e;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* harpon section  */
+.harpon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -120px;
+
+}
+
+.join-us {
+    position: relative;
+    top: -110px;
+}
+
+.join-us img {
+    width: 100%;
+    height: 50px;
+}
+
+/* Phase Section */
+.phases {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #0051a3;
+}
+
+.phase {
+    text-align: center;
+    padding: 10px;
+}
+
+.phase img {
+    max-width: 60px;
+    margin: 10px 0;
+}
+
+/* Section Styling */
+.upload-section,
+.share-section,
+.feedback-section {
+    background: #ffffff;
+    color: #0051a3;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.upload-section input[type="file"],
+.share-section input[type="text"],
+.share-section input[type="tel"],
+.feedback-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #0051a3;
+    font-size: 16px;
+}
+
+button {
+    background-color: #f76f8e;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ff4d6e;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0051a3;
+    color: #ffffff;
+    margin-top: 20px;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harpoon Campaign</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header Navigation -->
+    <header class="header-nav">
+      <nav>
+        <ul>
+          <li><a href="#">হারপুন</a></li>
+          <li><a href="#">জয়েন করুন</a></li>
+          <li><a href="#">শেয়ার দিন</a></li>
+          <li><a href="#">আওয়াজ তুলুন</a></li>
+          <li><a href="#">সাথে থাকুন</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section with Carousel -->
+    <section class="carousel">
+      <div class="carousel-container">
+        <div class="carousel-slide">
+          <img
+            src="./assets/images/Banner.png"
+            alt="Slide 1"
+            class="carousel-image"
+          />
+        </div>
+        <div class="carousel-slide">
+          <img
+            src="./assets/images/Banner.png"
+            alt="Slide 2"
+            class="carousel-image"
+          />
+        </div>
+        <div class="carousel-slide">
+          <img
+            src="./assets/images/Banner.png"
+            alt="Slide 3"
+            class="carousel-image"
+          />
+        </div>
+      </div>
+      <!-- Dots for Navigation -->
+      <div class="carousel-dots">
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+    </section>
+
+    <!-- Power for her -->
+    <section class="harpon">
+      <img src="./assets/images/Harpon.png" alt="" />
+    </section>
+
+    <!-- join korun section  -->
+    <div class="join-us">
+      <img src="./assets/JPG/Join-Korun.jpg" alt="" />
+    </div>
+    <!-- Image Upload Section -->
+    <section class="upload-section">
+      <h3>ছবি আপলোড করুন</h3>
+      <input type="file" />
+      <div class="preview">ছবি আপলোড করার পর আপনার শেয়ারিটি এখানে শো করবে</div>
+      <button type="button">শেয়ার করুন</button>
+    </section>
+
+    <!-- Share Information Section -->
+    <section class="share-section">
+      <h3>শেয়ার করুন</h3>
+      <p>সার্টিফিকেট পেতে নিজের তথ্য দিয়ে নিবন্ধন করুন</p>
+      <form>
+        <input type="text" placeholder="আপনার নাম" />
+        <input type="tel" placeholder="মোবাইল নম্বর" />
+        <input type="text" placeholder="রেফারেন্স নম্বর" />
+        <button type="submit">নিবন্ধন করুন</button>
+      </form>
+    </section>
+
+    <!-- Feedback Section -->
+    <section class="feedback-section">
+      <h3>আপনার মতামত দিন</h3>
+      <textarea placeholder="আপনার মতামত লিখুন..."></textarea>
+      <button type="submit">মতামত দিন</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>#harpoon #hygieneforallpowerforher</p>
+      <p>Follow Us On:</p>
+      <!-- Social media links or icons here -->
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
