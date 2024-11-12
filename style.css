@@ -8,9 +8,14 @@
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(90deg, #000078, #017fcb);
-    color: #333;
+    color: white;
     margin: 0;
     padding: 0;
+}
+
+.title {
+    width: 100%;
+    height: 50px;
 }
 
 /* Header Navigation */
@@ -106,9 +111,44 @@ body {
     top: -110px;
 }
 
-.join-us img {
-    width: 100%;
-    height: 50px;
+.join-us .personal-poster {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.photo-frame {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+
+}
+
+.photo-frame img {
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+    margin: 10px 0;
+}
+
+.show-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-image h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: white;
+    color: #000078;
+    text-align: center;
 }
 
 /* Phase Section */
@@ -131,17 +171,19 @@ body {
 }
 
 /* Section Styling */
-.upload-section,
-.share-section,
-.feedback-section {
-    background: #ffffff;
-    color: #0051a3;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px auto;
-    width: 80%;
+
+.share-section {
+    margin: 30px 0;
     text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    color: white;
+
+}
+
+.share-section .input-data {
+    display: flex;
+    gap: 10px;
 }
 
 .upload-section input[type="file"],
@@ -156,19 +198,6 @@ body {
     font-size: 16px;
 }
 
-button {
-    background-color: #f76f8e;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-button:hover {
-    background-color: #ff4d6e;
-}
 
 /* Footer */
 .footer {
