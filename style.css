@@ -200,10 +200,51 @@ body {
 
 
 /* Footer */
+/* Footer Styling */
 .footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #0051a3;
-    color: #ffffff;
-    margin-top: 20px;
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    border-top: 1px solid #ddd;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+.footer-left p {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+}
+
+.footer-right p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    margin-right: 10px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.social-icon img:hover {
+    filter: none;
 }
