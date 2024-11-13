@@ -40,3 +40,9 @@ document.addEventListener("DOMContentLoaded", () => {
   showSlide(currentIndex); // Show the first slide
   startSlideInterval(); // Start automatic sliding
 });
+
+
+function toggleMenu() {
+  const navMenu = document.getElementById("nav-menu");
+  navMenu.classList.toggle("open");
+}

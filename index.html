@@ -12,9 +12,9 @@
       <nav>
         <ul>
           <li><a href="#">হারপুন</a></li>
-          <li><a href="#">জয়েন করুন</a></li>
-          <li><a href="#">শেয়ার দিন</a></li>
-          <li><a href="#">আওয়াজ তুলুন</a></li>
+          <li><a href="#join-now">জয়েন করুন</a></li>
+          <li><a href="#share">শেয়ার দিন</a></li>
+          <li><a href="#story">আওয়াজ তুলুন</a></li>
           <li><a href="#">সাথে থাকুন</a></li>
         </ul>
       </nav>
@@ -58,43 +58,49 @@
       <img src="./assets/images/Harpon.png" alt="" />
     </section>
 
-    <!-- join korun section  -->
-    <div class="join-us">
+    <!-- Join Us Section -->
+    <div class="join-us" id="join-now">
       <img class="title" src="./assets/JPG/Join-Korun.jpg" alt="" />
       <div class="photo-frame">
-        <div class="">
+        <div>
           <h3>ফ্রেম ১</h3>
           <img src="./assets/images/PhotoFrame_v2.png" alt="" />
         </div>
-        <div class="">
+        <div>
           <h3>ফ্রেম ২</h3>
           <img src="./assets/images/PhotoFrame.png" alt="" />
         </div>
       </div>
       <div class="photo-frame">
-        <div class="">
+        <div>
           <h3>ফ্রেম নির্বাচন করুন</h3>
-          <img src="./assets/JPG/upload.png" alt="" />
+          <div>
+            <img
+              src="./assets/JPG/upload.png"
+              alt="Upload"
+              style="cursor: pointer; width: 200px; height: 170px"
+              onclick="document.getElementById('fileInput').click()"
+            />
+            <input type="file" id="fileInput" style="display: none" />
+          </div>
           <h3>ছবি আপলোড করুন</h3>
         </div>
       </div>
       <div class="show-image">
-        <!-- <img src="./assets/images/show-image.png" alt="" /> -->
-        <h3>ছবি আপলোড করার পর আপনার েপা�ার� এখােন েশা করেব</h3>
+        <h3>ছবি আপলোড করার পর আপনার পোস্টার এখানে শো করবে</h3>
       </div>
       <div class="personal-poster">
-        <h3>আপনার েপা�ার</h3>
+        <h3>আপনার পোস্টার</h3>
         <button><img src="./assets/JPG/Save-Button.jpg" alt="" /></button>
         <button><img src="./assets/JPG/Share-Button.png" alt="" /></button>
       </div>
     </div>
 
-    <!-- certificate section-->
+    <!-- Certificate Section -->
     <section>
       <img class="title" src="./assets/JPG/Shopoth-Nin.jpg" alt="" />
-
       <section class="share-section">
-        <div class="">
+        <div>
           <h4>
             সার্টিফিকেট পেতে <br />
             নিজের তথ্য দিয়ে নিবন্ধন করুন
@@ -106,143 +112,166 @@
               <input type="text" placeholder="রেফারেন্স নম্বর" />
             </div>
             <button type="submit">
-              <img src="./assets//JPG/Certificate-Download-Button.png" alt="" />
+              <img src="./assets/JPG/Certificate-Download-Button.png" alt="" />
             </button>
           </form>
         </div>
       </section>
     </section>
 
-    <!-- story section-->
-    <section>
+    <!-- Story Section -->
+    <div class="" id="story">
       <img class="title" src="./assets/JPG/Awaj-Tulun.jpg" alt="" />
-      <section class="share-section">
-        <div class="">
-          <h4>
-            আপনার গ�� এখােন িলখ <br />
-            সবার সােথ েশয়ার কর�ন
-          </h4>
-          <form>
-            <div class="">
-              <div class="input-data">
-                <input type="text" placeholder="আপনার নাম" />
-                <input type="tel" placeholder="মোবাইল নম্বর" />
-              </div>
-              <textarea type="text" placeholder="রেফারেন্স নম্বর"> </textarea>
-            </div>
-            <button type="submit">
-              <img src="./assets//JPG/Post-Button.png" alt="" />
-            </button>
-          </form>
-        </div>
+      <section class="story-section">
+        <h2>
+          আপনার গল্পটি এখানে লিখে <br />
+          সবার সাথে শেয়ার করুন
+        </h2>
+        <form class="story-form">
+          <div class="input-group">
+            <input type="text" placeholder="আপনার নাম*" required />
+            <input type="email" placeholder="ই-মেইল*" required />
+          </div>
+          <textarea
+            placeholder="আপনার গল্পটি সর্বোচ্চ ৩০০ শব্দের মধ্যে এখানে লিখুন"
+          ></textarea>
+          <button type="submit" class="submit-button">শেয়ার করুন</button>
+        </form>
       </section>
-    </section>
-
-    <!-- video upload section-->
+    </div>
+    <!-- Video Upload Section -->
     <section>
       <img class="title" src="./assets/JPG/Video-Banan.jpg" alt="" />
-      
-        <div class="" style="display: flex; justify-content: center; ">
-          <div class="">
-            <h4 style="text-align: center; margin: 20px 0;">
-              িভিডও আপেলাড করেত <br>
-িনেচর আপেলাড বাটেন ি�ক কর�ন
-            </h4>
-            <button><img src="./assets//JPG/Video-Link-Button.png" alt=""></button>
+      <div style="display: flex; justify-content: center; text-align: center">
+        <div>
+          <h4 style="margin: 20px 0">
+            ভিডিও আপলোড করতে <br />
+            নিচের আপলোড বাটন ক্লিক করুন
+          </h4>
+          <!--  -->
+          <div>
+            <img
+              src="./assets/JPG/Video-Link-Button.png"
+              alt="Upload"
+              style="cursor: pointer"
+              onclick="document.getElementById('fileInput').click()"
+            />
+            <input type="file" id="fileInput" style="display: none" />
           </div>
         </div>
-      </section>
+      </div>
     </section>
 
-    <!-- comment section-->
-    <section style="margin: 20px 0;">
+    <!-- Comment Section -->
+    <section style="margin: 20px 0">
       <img class="title" src="./assets/JPG/Blog-Gallery.jpg" alt="" />
-      <div class="" style="display: flex; justify-content: center;">
+      <div style="display: flex; justify-content: center">
+        <div class="comment" style="">
+          <!-- Repeat the comment box as needed -->
+          <div
+            style="
+              background-color: white;
+              padding: 15px;
+              border-radius: 5px;
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+              text-align: center;
+            "
+          >
+            <h3 style="margin: 0; font-size: 18px; color: gray">
+              সুমাইয়া বরকতউল্লাহ
+            </h3>
+            <p style="margin: 10px 0; font-size: 14px; color: gray">
+              ফিল্ম হাউজিং নিয়ে কথা বলতে গেলে অবশ্যই আলো গবেষকের পরিপ্রেক্ষিত
+              বিবেচনা।
+            </p>
+            <a href="#" style="color: #007bff; font-size: 14px">আরও পড়ুন...</a>
+          </div>
 
-        <div style="font-family: Arial, sans-serif; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; padding: 20px;">
+          <div
+            style="
+              background-color: white;
+              padding: 15px;
+              border-radius: 5px;
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+              text-align: center;
+            "
+          >
+            <h3 style="margin: 0; font-size: 18px; color: gray">শমী ওয়াদিদ</h3>
+            <p style="margin: 10px 0; font-size: 14px; color: gray">
+              ফিল্ম হাউজিং নিয়ে কথা বলতে গেলে অবশ্যই আলো গবেষকের পরিপ্রেক্ষিত
+              বিবেচনা।
+            </p>
+            <a href="#" style="color: #007bff; font-size: 14px">আরও পড়ুন...</a>
+          </div>
 
-          <div style="width: 200px; background-color: white; padding: 15px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">
-              <h3 style="margin: 0; font-size: 18px; color: gray;">সুমাইয়া বরকতউল্লাহ</h3>
-              <p style="margin: 10px 0; font-size: 14px; color: gray;">ফিল্ম হাউজিং নিয়ে কথা বলতে গেলে অবশ্যই আলো গবেষকের পরিপ্রেক্ষিত বিবেচনা।</p>
-              <a href="#" style="color: #007bff; font-size: 14px;">আরও পড়ুন...</a>
+          <div
+            style="
+              background-color: white;
+              padding: 15px;
+              border-radius: 5px;
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+              text-align: center;
+            "
+          >
+            <h3 style="margin: 0; font-size: 18px; color: gray">
+              হেদায়েত উল্লাহ
+            </h3>
+            <p style="margin: 10px 0; font-size: 14px; color: gray">
+              ফিল্ম হাউজিং নিয়ে কথা বলতে গেলে অবশ্যই আলো গবেষকের পরিপ্রেক্ষিত
+              বিবেচনা।
+            </p>
+            <a href="#" style="color: #007bff; font-size: 14px">আরও পড়ুন...</a>
           </div>
-      
-          <div style="width: 200px; background-color: white; padding: 15px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">
-              <h3 style="margin: 0; font-size: 18px; color: gray;">শমী ওয়াদিদ</h3>
-              <p style="margin: 10px 0; font-size: 14px; color: gray;">ফিল্ম হাউজিং নিয়ে কথা বলতে গেলে অবশ্যই আলো গবেষকের পরিপ্রেক্ষিত বিবেচনা।</p>
-              <a href="#" style="color: #007bff; font-size: 14px;">আরও পড়ুন...</a>
-          </div>
-      
-          <div style="width: 200px; background-color: white; padding: 15px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">
-              <h3 style="margin: 0; font-size: 18px; color: gray;">হেদায়েত উল্লাহ</h3>
-              <p style="margin: 10px 0; font-size: 14px; color: gray;">ফিল্ম হাউজিং নিয়ে কথা বলতে গেলে অবশ্যই আলো গবেষকের পরিপ্রেক্ষিত বিবেচনা।</p>
-              <a href="#" style="color: #007bff; font-size: 14px;">আরও পড়ুন...</a>
-          </div>
-  
-          <div style="width: 200px; background-color: white; padding: 15px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">
-            <h3 style="margin: 0; font-size: 18px; color: gray;">সুমাইয়া বরকতউল্লাহ</h3>
-            <p style="margin: 10px 0; font-size: 14px; color: gray;">ফিল্ম হাউজিং নিয়ে কথা বলতে গেলে অবশ্যই আলো গবেষকের পরিপ্রেক্ষিত বিবেচনা।</p>
-            <a href="#" style="color: #007bff; font-size: 14px;">আরও পড়ুন...</a>
         </div>
-    
-        <div style="width: 200px; background-color: white; padding: 15px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">
-            <h3 style="margin: 0; font-size: 18px; color: gray;">শমী ওয়াদিদ</h3>
-            <p style="margin: 10px 0; font-size: 14px; color: gray;">ফিল্ম হাউজিং নিয়ে কথা বলতে গেলে অবশ্যই আলো গবেষকের পরিপ্রেক্ষিত বিবেচনা।</p>
-            <a href="#" style="color: #007bff; font-size: 14px;">আরও পড়ুন...</a>
-        </div>
-    
-        <div style="width: 200px; background-color: white; padding: 15px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">
-            <h3 style="margin: 0; font-size: 18px; color: gray;">হেদায়েত উল্লাহ</h3>
-            <p style="margin: 10px 0; font-size: 14px; color: gray;">ফিল্ম হাউজিং নিয়ে কথা বলতে গেলে অবশ্যই আলো গবেষকের পরিপ্রেক্ষিত বিবেচনা।</p>
-            <a href="#" style="color: #007bff; font-size: 14px;">আরও পড়ুন...</a>
-        </div>
-      </div>
-      
-    
       </div>
     </section>
 
-    <!-- video section-->
+    <!-- Video Section -->
     <section>
-      <img class="title" src="./assets/JPG/Video-Gallery.jpg" alt="" />
+      <img
+        class="title"
+        src="./assets/JPG/Video-Gallery.jpg"
+        alt="Video Gallery"
+      />
 
-      <div style="display: flex; justify-content: center; align-items: center; gap: 20px;  margin:20px 0;">
-
-        <div style="width: 150px; height: 100px; background-color: white; display: flex; justify-content: center; align-items: center; border-radius: 5px;">
-            <div style="width: 40px; height: 40px; background-color: #ffdede; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
-                <div style="width: 0; height: 0; border-left: 12px solid red; border-top: 8px solid transparent; border-bottom: 8px solid transparent;"></div>
-            </div>
+      <div>
+        <div class="video-section">
+          <video controls>
+            <source src="path/to/video1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <video controls>
+            <source src="path/to/video1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <video controls>
+            <source src="path/to/video1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
-    
-        <div style="width: 150px; height: 100px; background-color: white; display: flex; justify-content: center; align-items: center; border-radius: 5px;">
-            <div style="width: 40px; height: 40px; background-color: #ffdede; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
-                <div style="width: 0; height: 0; border-left: 12px solid red; border-top: 8px solid transparent; border-bottom: 8px solid transparent;"></div>
-            </div>
-        </div>
-    
-        <div style="width: 150px; height: 100px; background-color: white; display: flex; justify-content: center; align-items: center; border-radius: 5px;">
-            <div style="width: 40px; height: 40px; background-color: #ffdede; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
-                <div style="width: 0; height: 0; border-left: 12px solid red; border-top: 8px solid transparent; border-bottom: 8px solid transparent;"></div>
-            </div>
-        </div>
-    
       </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-content">
-          <div class="footer-left">
-              <p>#harpoon #hygieneforallpowerforher</p>
-          </div>
-          <div class="footer-right">
-              <p>Follow Us On:</p>
-              <a href="#" class="social-icon"><img src="assets/images/facebook-icon.png" alt="Facebook"></a>
-              <a href="#" class="social-icon"><img src="assets/images/twitter-icon.png" alt="Twitter"></a>
-              <a href="#" class="social-icon"><img src="assets/images/instagram-icon.png" alt="Instagram"></a>
-          </div>
+        <div class="footer-left">
+          <p>#harpoon #hygieneforallpowerforher</p>
+        </div>
+        <div class="footer-right">
+          <p>Follow Us On:</p>
+          <a href="#" class="social-icon"
+            ><img src="assets/images/facebook-icon.png" alt="Facebook"
+          /></a>
+          <a href="#" class="social-icon"
+            ><img src="assets/images/twitter-icon.png" alt="Twitter"
+          /></a>
+          <a href="#" class="social-icon"
+            ><img src="assets/images/instagram-icon.png" alt="Instagram"
+          /></a>
+        </div>
       </div>
-  </footer>
+    </footer>
+    <script src="script.js"></script>
   </body>
-  <script src="script.js"></script>
 </html>
