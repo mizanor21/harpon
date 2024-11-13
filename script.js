@@ -41,8 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
   startSlideInterval(); // Start automatic sliding
 });
 
-
 function toggleMenu() {
-  const navMenu = document.getElementById("nav-menu");
-  navMenu.classList.toggle("open");
+  const navLinks = document.querySelector(".nav-links");
+  navLinks.classList.toggle("open");
 }

@@ -19,28 +19,132 @@ body {
 }
 
 /* ========== Header Navigation ========== */
+/* Header Navigation Styling */
+/* Header Navigation Styling */
 .header-nav {
     background-color: #ffffff;
-    text-align: center;
-    padding: 10px 0;
+    padding: 5px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    transition: all 0.3s ease;
 }
 
-.header-nav nav ul {
-    list-style: none;
+.header-nav nav {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo Styling */
+/* Logo Section Styling */
+.logo {
+    display: flex;
+    align-items: center;
     gap: 15px;
 }
 
-.header-nav nav ul li a {
-    color: #0051a3;
-    font-weight: bold;
+.logo a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
 }
 
-.header-nav nav ul li a:hover {
-    color: #f76f8e;
+/* Logo Image Styling */
+.logo-image {
+    width: 100px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
+
+.logo-image:hover {
+    transform: scale(1.1);
+    /* Slight zoom on hover */
+    opacity: 0.9;
+}
+
+/* Divider Styling */
+.divider {
+    width: 2px;
+    height: 50px;
+    background-color: #0051a3;
+    /* Divider color to match theme */
+    opacity: 0.5;
+}
+
+/* Navbar Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a {
+    color: #0051a3;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 4px;
+    position: relative;
+}
+
+.nav-links li a:hover {
+    color: #ffffff;
+    background-color: #f76f8e;
+}
+
+/* Adding a bottom border animation effect */
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #0051a3;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Hamburger Icon Styling */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #0051a3;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Animation for Hamburger Icon */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
 
 /* ========== Carousel Section ========== */
 .carousel {
@@ -352,15 +456,52 @@ textarea {
     }
 }
 
-@media (max-width: 375px) {
-    .header-nav nav ul {
-        gap: 5px;
-        /* Reduce the gap on very small screens */
+@media (max-width: 750px) {
+
+    .hamburger {
+        display: flex;
     }
 
-    .header-nav nav ul li a {
-        font-size: 0.9rem;
-        /* Adjust font size if necessary */
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 0;
+        width: 200px;
+        border-radius: 8px;
+        display: none;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        z-index: 100;
+    }
+
+    /* Show menu when open */
+    .nav-links.open {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: left;
+        padding: 10px 20px;
+    }
+
+    .nav-links li a {
+        width: 100%;
+        color: #0051a3;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    .carousel-dots {
+        z-index: 0;
     }
 
     .harpon {
