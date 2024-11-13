@@ -27,7 +27,7 @@
         </div>
         <ul class="nav-links">
           <li><a href="#join-now">জয়েন করুন</a></li>
-          <li><a href="#share">শেয়ার দিন</a></li>
+          <li><a href="#shopoth">শপথ নিন</a></li>
           <li><a href="#story">আওয়াজ তুলুন</a></li>
           <li><a href="#">সাথে থাকুন</a></li>
         </ul>
@@ -79,51 +79,103 @@
 
     <!-- Join Us Section -->
     <div class="join-us" id="join-now">
-      <img class="title" src="./assets/JPG/Join-Korun.jpg" alt="" />
-      <div class="photo-frame">
-        <div>
-          <h3>ফ্রেম ১</h3>
-          <img
-            style="background-color: white"
-            src="./assets/images/PhotoFrame_v2.png"
-            alt=""
-          />
+      <!-- title  -->
+      <div
+        class=""
+        style="
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          width: 100%;
+          height: 40px;
+        "
+      >
+        <div
+          class=""
+          style="
+            background-color: white;
+            display: flex;
+            justify-content: end;
+            padding: 2px 30px;
+          "
+        >
+          <img src="./assets/images/joinkorun.png" alt="" />
         </div>
-        <div>
-          <h3>ফ্রেম ২</h3>
-          <img src="./assets/images/PhotoFrame.png" alt="" />
-        </div>
+        <div
+          class=""
+          style="background: linear-gradient(90deg, #000078, #017fcb)"
+        ></div>
       </div>
-      <div class="photo-frame">
-        <div>
-          <h3>ফ্রেম নির্বাচন করুন</h3>
+      <div class="" style="margin: 50px 0px">
+        <div class="photo-frame">
           <div>
+            <h3>ফ্রেম ১</h3>
             <img
-              src="./assets/JPG/upload.png"
-              alt="Upload"
-              style="cursor: pointer; width: 200px; height: 170px"
-              onclick="document.getElementById('fileInput').click()"
+              style="background-color: white"
+              src="./assets/images/PhotoFrame_v2.png"
+              alt=""
             />
-            <input type="file" id="fileInput" style="display: none" />
           </div>
-          <h3>ছবি আপলোড করুন</h3>
+          <div>
+            <h3>ফ্রেম ২</h3>
+            <img src="./assets/images/PhotoFrame.png" alt="" />
+          </div>
         </div>
-      </div>
-      <div class="show-image">
-        <h3>ছবি আপলোড করার পর আপনার পোস্টার এখানে শো করবে</h3>
-      </div>
-      <div class="personal-poster">
-        <h3>আপনার পোস্টার</h3>
-        <button><img src="./assets/JPG/Save-Button.jpg" alt="" /></button>
-        <button><img src="./assets/JPG/Share-Button.png" alt="" /></button>
+        <div class="photo-frame">
+          <div>
+            <h3>ফ্রেম নির্বাচন করুন</h3>
+            <div>
+              <img
+                src="./assets/JPG/upload.png"
+                alt="Upload"
+                style="cursor: pointer; width: 200px; height: 170px"
+                onclick="document.getElementById('fileInput').click()"
+              />
+              <input type="file" id="fileInput" style="display: none" />
+            </div>
+            <h3>ছবি আপলোড করুন</h3>
+          </div>
+        </div>
+        <div class="show-image">
+          <h3>ছবি আপলোড করার পর আপনার পোস্টার এখানে শো করবে</h3>
+        </div>
+        <div class="personal-poster">
+          <h3>আপনার পোস্টার</h3>
+          <button><img src="./assets/JPG/Save-Button.jpg" alt="" /></button>
+          <button><img src="./assets/JPG/Share-Button.png" alt="" /></button>
+        </div>
       </div>
     </div>
 
-    <!-- Certificate Section -->
-    <section>
-      <img class="title" src="./assets/JPG/Shopoth-Nin.jpg" alt="" />
+    <!-- Shopoth Section -->
+    <section id="shopoth">
+      <!-- title  -->
+      <div
+        class=""
+        style="
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          width: 100%;
+          height: 40px;
+        "
+      >
+        <div
+          class=""
+          style="
+            background-color: white;
+            display: flex;
+            justify-content: end;
+            padding: 2px 30px;
+          "
+        >
+          <img src="./assets/images/shopothnin.png" alt="" />
+        </div>
+        <div
+          class=""
+          style="background: linear-gradient(90deg, #000078, #017fcb)"
+        ></div>
+      </div>
       <section class="share-section">
-        <div>
+        <div style="margin: 30px 0">
           <h4>
             সার্টিফিকেট পেতে <br />
             নিজের তথ্য দিয়ে নিবন্ধন করুন
@@ -144,7 +196,32 @@
 
     <!-- Story Section -->
     <div class="" id="story">
-      <img class="title" src="./assets/JPG/Awaj-Tulun.jpg" alt="" />
+      <!-- title  -->
+      <div
+        class=""
+        style="
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          width: 100%;
+          height: 40px;
+        "
+      >
+        <div
+          class=""
+          style="
+            background-color: white;
+            display: flex;
+            justify-content: end;
+            padding: 2px 30px;
+          "
+        >
+          <img src="./assets/images/awaztulun.png" alt="" />
+        </div>
+        <div
+          class=""
+          style="background: linear-gradient(90deg, #000078, #017fcb)"
+        ></div>
+      </div>
       <section class="story-section">
         <h2>
           আপনার গল্পটি এখানে লিখে <br />
@@ -158,14 +235,59 @@
           <textarea
             placeholder="আপনার গল্পটি সর্বোচ্চ ৩০০ শব্দের মধ্যে এখানে লিখুন"
           ></textarea>
-          <button type="submit" class="submit-button">শেয়ার করুন</button>
+          <button
+            type="submit"
+            style="
+              padding: 10px 0px;
+              color: white;
+              cursor: pointer;
+              border: none;
+              box-shadow: 20px;
+              background: linear-gradient(90deg, #000078, #017fcb);
+            "
+            class="submit-button"
+          >
+            শেয়ার করুন
+          </button>
         </form>
       </section>
     </div>
     <!-- Video Upload Section -->
     <section>
-      <img class="title" src="./assets/JPG/Video-Banan.jpg" alt="" />
-      <div style="display: flex; justify-content: center; text-align: center">
+      <!-- title  -->
+      <div
+        class=""
+        style="
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          width: 100%;
+          height: 40px;
+        "
+      >
+        <div
+          class=""
+          style="
+            background-color: white;
+            display: flex;
+            justify-content: end;
+            padding: 2px 30px;
+          "
+        >
+          <img src="./assets/images/videoBanan.png" alt="" />
+        </div>
+        <div
+          class=""
+          style="background: linear-gradient(90deg, #000078, #017fcb)"
+        ></div>
+      </div>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          margin: 20px 0px;
+        "
+      >
         <div>
           <h4 style="margin: 20px 0">
             ভিডিও আপলোড করতে <br />
@@ -187,8 +309,33 @@
 
     <!-- Comment Section -->
     <section style="margin: 20px 0">
-      <img class="title" src="./assets/JPG/Blog-Gallery.jpg" alt="" />
-      <div style="display: flex; justify-content: center">
+      <!-- title  -->
+      <div
+        class=""
+        style="
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          width: 100%;
+          height: 40px;
+        "
+      >
+        <div
+          class=""
+          style="
+            background-color: white;
+            display: flex;
+            justify-content: end;
+            padding: 2px 30px;
+          "
+        >
+          <img src="./assets/images/blogGallary.png" alt="" />
+        </div>
+        <div
+          class=""
+          style="background: linear-gradient(90deg, #000078, #017fcb)"
+        ></div>
+      </div>
+      <div style="display: flex; justify-content: center; margin: 20px 0">
         <div class="comment" style="">
           <!-- Repeat the comment box as needed -->
           <div
@@ -251,13 +398,34 @@
 
     <!-- Video Section -->
     <section>
-      <img
-        class="title"
-        src="./assets/JPG/Video-Gallery.jpg"
-        alt="Video Gallery"
-      />
+      <!-- title  -->
+      <div
+        class=""
+        style="
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          width: 100%;
+          height: 40px;
+        "
+      >
+        <div
+          class=""
+          style="
+            background-color: white;
+            display: flex;
+            justify-content: end;
+            padding: 2px 30px;
+          "
+        >
+          <img src="./assets/images/videoGallary.png" alt="" />
+        </div>
+        <div
+          class=""
+          style="background: linear-gradient(90deg, #000078, #017fcb)"
+        ></div>
+      </div>
 
-      <div>
+      <div style="margin: 20px 0">
         <div class="video-section">
           <video controls>
             <source src="path/to/video1.mp4" type="video/mp4" />
